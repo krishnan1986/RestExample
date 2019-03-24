@@ -1,0 +1,14 @@
+---
+Test
+---
+!| import                                   |
+|smartrics.rest.fitnesse.fixture|
+
+|Table: Rest Fixture|http://localhost:8080|
+|GET                |/greeting  |200  | | |
+
+|Table: Rest Fixture|http://localhost:8080     |
+|GET                |/greeting?name=Krish|200|||
+
+|Table: Rest Fixture|http://localhost:8080|
+|PUT                |/    |200    |   |   |
